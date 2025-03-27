@@ -1,14 +1,16 @@
 ---
+import logo from '../assets/logo.webp';
+
 const headerData = {
     color: "#db3434",
     titulo: "Chat de Ayuda",
-    imagen: "/logo.webp",
+    imagen: logo,
 };
 ---
 
 <header style={`background-color: ${headerData.color}`}>
     <a href="/chat/inicio" class="header-container">
-        <img src={headerData.imagen} alt="Logo" class="logo" />
+        <img src={headerData.imagen.src} alt="Logo" class="logo" />
         <h1 class="titulo">{headerData.titulo}</h1>
     </a>
 </header>
