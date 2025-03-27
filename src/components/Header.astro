@@ -1,0 +1,42 @@
+---
+const headerData = {
+    color: "#db3434",
+    titulo: "Chat de Ayuda",
+    imagen: "/logo.webp",
+};
+---
+
+<header style={`background-color: ${headerData.color}`}>
+    <a href="/chat/inicio" class="header-container">
+        <img src={headerData.imagen} alt="Logo" class="logo" />
+        <h1 class="titulo">{headerData.titulo}</h1>
+    </a>
+</header>
+
+<style>
+    header {
+        background-color: {headerData.color};
+        padding: 1rem;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none; 
+        color: white;
+    }
+
+    .logo {
+        height: 60px;
+        border-radius: 5px;
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+        padding-left: 15px;
+        text-decoration: none; 
+    }
+</style>

@@ -1,0 +1,17 @@
+---
+import Header from "../../components/Header.astro";
+import ChatInterface from "../../components/ChatInterface.astro";
+import chatbotData from "../../data/chatbot.json";
+
+// Generamos las rutas dinámicas a partir de los IDs en el JSON
+export async function getStaticPaths() {
+  return chatbotData.nodos.map((nodo) => ({
+    params: { id: nodo.id },
+  }));
+}
+
+const { id } = Astro.params;
+---
+
+<Header />
+<ChatInterface id={id} />

@@ -1,0 +1,75 @@
+---
+import Layout from "../layouts/Layout.astro";
+import chatbotData from "../data/chatbot.json";
+
+const { id } = Astro.props;
+const nodo =
+    chatbotData.nodos.find((n) => n.id === id) ||
+    chatbotData.nodos.find((n) => n.id === "inicio");
+
+if (!nodo) {
+    throw new Error(`No se encontró el nodo con id: ${id}`);
+}
+
+// Aseguramos que nodo.opciones sea un array vacío si está indefinido
+const opciones = Array.isArray(nodo.opciones) ? nodo.opciones : [];
+---
+
+<Layout>
+    <div class="chat-container">
+        <p class="nodo-texto" set:html={nodo.texto} />
+
+        {
+            nodo.tipo === "pregunta" ? (
+                <div class="buttons">
+                    {opciones.length > 0 ? (
+                        opciones.map((opcion) => (
+                            <a href={`/chat/${opcion.id}`} class="chat-button">
+                                {opcion.texto}
+                            </a>
+                        ))
+                    ) : (
+                        <p class="error-message">
+                            No hay opciones disponibles.
+                        </p>
+                    )}
+                </div>
+            ) : (
+                <div class="respuesta">
+                    <a href="/chat/inicio" class="chat-button">
+                        Volver al inicio
+                    </a>
+                </div>
+            )
+        }
+    </div>
+</Layout>
+
+<style>
+    .chat-container {
+        padding: 20px;
+        max-width: 500px;
+        margin: auto;
+    }
+    .chat-button {
+        display: block;
+        margin: 15px 0;
+        padding: 15px;
+        background: #db3434;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center;
+        transition: background 0.3s;
+    }
+    .chat-button:hover {
+        background: #b52929;
+    }
+    .error-message {
+        color: red;
+        font-weight: bold;
+    }
+    .nodo-texto {
+        font-size: larger;
+    }
+</style>

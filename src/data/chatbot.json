@@ -1,0 +1,66 @@
+{
+    "nodos": [
+        {
+            "id": "inicio",
+            "tipo": "pregunta",
+            "texto": "Hola! Soy Romerito, el bot del ISEF N° 1. En qué te puedo ayudar hoy?",
+            "opciones": [
+                {
+                    "id": "cartelera_digital",
+                    "texto": "Cartelera Digital"
+                },
+                {
+                    "id": "espacios_de_cursada",
+                    "texto": "Espacios de Cursada"
+                },
+                {
+                    "id": "tramites",
+                    "texto": "Trámites"
+                },
+                {
+                    "id": "mails_de_contacto",
+                    "texto": "Mails de contacto"
+                }
+            ]
+        },
+        {
+            "id": "cartelera_digital",
+            "tipo": "respuesta",
+            "texto": "Obvio! Acá te dejo el acceso directo a la Cartelera Digital: <a href='https://romerobrest.edu.ar/cartelera/'>Ver cartelera</a>"
+        },
+        {
+            "id": "espacios_de_cursada",
+            "tipo": "pregunta",
+            "texto": "De qué turno necesitás ver los espacios de cursada?",
+            "opciones": [
+                {
+                    "id": "maniana",
+                    "texto": "Mañana"
+                },
+                {
+                    "id": "tarde",
+                    "texto": "Tarde"
+                },
+                {
+                    "id": "verpertino",
+                    "texto": "Vespertino"
+                }
+            ]
+        },
+        {
+            "id": "maniana",
+            "tipo": "respuesta",
+            "texto": "Perfecto! Acá te dejo el acceso directo a los espacios de cursada del turno mañana: <a href='https://docs.google.com/spreadsheets/d/1vqyPLpk2gYrJg4ofx25DpVSsyvO9mLtSrQyn7HZx9yg/edit?usp=sharing'>Ir al formulario</a>"
+        },
+        {
+            "id": "tarde",
+            "tipo": "respuesta",
+            "texto": "Perfecto! Acá te dejo el acceso directo a los espacios de cursada del turno tarde: "
+        },
+        {
+            "id": "verpertino",
+            "tipo": "respuesta",
+            "texto": "Perfecto! Acá te dejo el acceso directo a los espacios de cursada del turno vespertino: <a href='https://docs.google.com/spreadsheets/d/1EGOFY4X9ZOUx4ZWYNk2PE4L_vVMEhtFsEGSAtWEpuUY/edit?usp=sharing'>Ir al formulario</a>"
+        }
+    ]
+}
