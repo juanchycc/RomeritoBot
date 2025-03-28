@@ -61,6 +61,63 @@
             "id": "verpertino",
             "tipo": "respuesta",
             "texto": "Perfecto! Acá te dejo el acceso directo a los espacios de cursada del turno vespertino: <a href='https://docs.google.com/spreadsheets/d/1EGOFY4X9ZOUx4ZWYNk2PE4L_vVMEhtFsEGSAtWEpuUY/edit?usp=sharing'>Ir al formulario</a>"
+        },
+        {
+            "id": "tramites",
+            "tipo": "pregunta",
+            "texto": "Sobre qué trámite te gustaría conocer más?",
+            "opciones": [
+                {
+                    "id": "cambio_plan",
+                    "texto": "Solicitud de cambio de plan"
+                },
+                {
+                    "id": "titulo",
+                    "texto": "Título, cantidad de materias, analíticos, etc."
+                },
+                {
+                    "id": "reincorporacion",
+                    "texto": "Reincorporación"
+                },
+                {
+                    "id": "saf",
+                    "texto": "SAF prolongado y carta al rector"
+                },
+                {
+                    "id": "ayudantias",
+                    "texto": "Ayudantías de cátedra"
+                }
+            ]
+        },
+        {
+            "id": "cambio_plan",
+            "tipo": "respuesta",
+            "texto": "Perfecto, acá te dejo todo lo que necesitás saber: <a href='https://romerobrest.edu.ar/solicitud-cambio-de-plan-de-estudios/4442/'>Ir a cambio de plan</a>"
+        },
+        {
+            "id": "titulo",
+            "tipo": "respuesta",
+            "texto": "Perfecto, acá te dejo todo lo que necesitás saber: <a href='https://romerobrest.edu.ar/tramites-online/3159/'>Ver Info</a>"
+        },
+        {
+            "id": "reincorporacion",
+            "tipo": "respuesta",
+            "texto": "Perfecto, acá te dejo todo lo que necesitás saber sobre Reincorporación: <a href='https://romerobrest.edu.ar/informacion-relevante-sobre-reincorporacion-y-readmision-a-la-carrera/2609/'>Ir a Reincorporaciones</a>"
+        },
+        {
+            "id": "saf",
+            "tipo": "respuesta",
+            "texto": "Perfecto, acá te dejo todo lo que necesitás saber: <a href='https://romerobrest.edu.ar/carta_rectorado/1887/'>Ver Info</a>"
+        },
+        {
+            "id": "ayudantias",
+            "tipo": "respuesta",
+            "texto": "Perfecto, acá te dejo todo lo que necesitás saber sobre las ayudantías: <a href='https://romerobrest.edu.ar/ayudante_catedra/1885/'>Ir a Ayudantías</a>"
+        },
+        {
+            "id": "mails_de_contacto",
+            "tipo": "respuesta",
+            "texto": "Acá te dejo los mails de contacto para hacer tu consulta: <br> <li>Bedelía turno mañana: <a href='isef1.bedeliatm@bue.edu.ar'>isef1.bedeliatm@bue.edu.ar</a></li> <br> <li>Bedelía turno tarde: <a href='isef1.bedeliatt@bue.edu.ar'>isef1.bedeliatt@bue.edu.ar</a></li> <br> <li>Bedelía turno vespertino: <a href='isef1.bedeliatv@bue.edu.ar'>isef1.bedeliatv@bue.edu.ar</a></li>"
         }
     ]
 }

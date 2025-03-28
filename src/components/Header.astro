@@ -1,19 +1,28 @@
 ---
-
-import logo from '../assets/logo.webp';
+import logo from '../assets/logo_romero.webp';
+import instagram from '../assets/instagram.png';
 
 const headerData = {
     color: "#db3434",
     titulo: "Chat de Ayuda",
     imagen: logo,
+    instagram_img: instagram,
+    instagram_profile: "https://www.instagram.com/vocaciondocenteromerobrest/" 
 };
 ---
 
 <header style={`background-color: ${headerData.color}`}>
+
+    <!-- Contenido principal del header (Logo y Titulo) -->
     <a href="/RomeritoBot/chat/inicio" class="header-container">
         <img src={headerData.imagen.src} alt="Logo" class="logo" />
         <h1 class="titulo">{headerData.titulo}</h1>
     </a>
+
+    <a href={headerData.instagram_profile} target="_blank" class="right-image-container">
+        <img src={headerData.instagram_img.src} alt="Instagram" class="right-image" />
+    </a>
+
 </header>
 
 <style>
@@ -22,13 +31,16 @@ const headerData = {
         padding: 1rem;
         margin-bottom: 20px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .header-container {
         display: flex;
         align-items: center;
         gap: 10px;
-        text-decoration: none; 
+        text-decoration: none;
         color: white;
     }
 
@@ -40,6 +52,17 @@ const headerData = {
     .titulo {
         font-size: 1.5rem;
         padding-left: 15px;
-        text-decoration: none; 
+        text-decoration: none;
+    }
+
+    .right-image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-image {
+        height: 40px; /* Ajusta el tamaño de la imagen según lo necesites */
+        cursor: pointer;
     }
 </style>
