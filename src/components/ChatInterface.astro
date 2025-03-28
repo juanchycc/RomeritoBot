@@ -24,7 +24,10 @@ const opciones = Array.isArray(nodo.opciones) ? nodo.opciones : [];
                 <div class="buttons">
                     {opciones.length > 0 ? (
                         opciones.map((opcion) => (
-                            <a href={`/chat/${opcion.id}`} class="chat-button">
+                            <a
+                                href={`/RomeritoBot/chat/${opcion.id}`}
+                                class="chat-button"
+                            >
                                 {opcion.texto}
                             </a>
                         ))
@@ -36,7 +39,7 @@ const opciones = Array.isArray(nodo.opciones) ? nodo.opciones : [];
                 </div>
             ) : (
                 <div class="respuesta">
-                    <a href="/chat/inicio" class="chat-button">
+                    <a href="/RomeritoBot/chat/inicio" class="chat-button">
                         Volver al inicio
                     </a>
                 </div>
